@@ -2,6 +2,7 @@ import video from '../../Videos/Historia2.mp4'
 import video1 from '../../Videos/Cockpit.mp4'
 
 import { useRef, useEffect } from 'react'
+import CajaInf from './CajaInf/CajaInf';
 
 
 // Cuerpo de Pagina
@@ -42,6 +43,15 @@ const Body = () => {
             }}>Enseñando a volar</div>
         </div>
         
+        <div>
+            <CajaInf
+                
+                nombre = 'hola'
+                texto = 'asmfmdnsf'
+
+            />
+        </div>
+
         </>
     )
     
