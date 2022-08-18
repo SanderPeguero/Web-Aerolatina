@@ -7,7 +7,15 @@ const CajaInf = (props) => {
 
         <div className='contenedor-inf'>
 
-            
+            {
+                /*
+                <img 
+                    className='img-inf' 
+                    src={require(`../../../Images/${props.imagen}`)} 
+                    alt='Foto Inf'
+                />
+                */
+            }
 
             <div className='contenedor-texto-inf' >
 
@@ -20,6 +28,7 @@ const CajaInf = (props) => {
                 <p className='texto-inf'>
                     {props.texto}
                 </p>
+
             </div>
         </div>
 
