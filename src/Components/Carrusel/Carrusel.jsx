@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/Carousel';
-import './Carrusel.module.css'
 import CajaInf from '../../../src/Components/Home/CajaInf/CajaInf'
 
 function Carrusel() {
