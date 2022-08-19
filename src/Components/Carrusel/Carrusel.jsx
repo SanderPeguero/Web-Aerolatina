@@ -3,7 +3,7 @@ import CajaInf from '../../../src/Components/Home/CajaInf/CajaInf'
 
 function Carrusel() {
     return (
-        <Carousel style={{ background: '#808080' }}>
+        <Carousel style={{ background: '#00a4f7' }}>
 
             <Carousel.Item>
                 <div class="d-flex h-100 align-items-center justify-content-center">
