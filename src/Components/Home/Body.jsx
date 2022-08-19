@@ -48,7 +48,6 @@ const Products = () => {
                     twoButtons="true"
                 />
 
-                <Carrusel />
         </div>
     )
 }
