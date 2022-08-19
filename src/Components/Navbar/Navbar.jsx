@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import './styleHeader.css'
 import Logo from '../../Images/Logo.svg'
