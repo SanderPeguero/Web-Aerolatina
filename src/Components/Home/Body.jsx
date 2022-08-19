@@ -1,62 +1,54 @@
-import video from '../../Videos/Historia2.mp4'
-import video1 from '../../Videos/Cockpit.mp4'
+// import video from '../../Videos/Historia2.mp4'
+// import video1 from '../../Videos/Cockpit.mp4'
 
-import { useRef, useEffect } from 'react'
-import {CajaInf} from './CajaInf/CajaInf';
+// import { useRef, useEffect } from 'react'
+// import CajaInf from './CajaInf/CajaInf.jsx'
 
 
-// Cuerpo de Pagina
-const Body = () => {
+import React from "react"
+import Item from "./Item/Item.jsx"
+// import Model3 from '../../assets/Desktop-Model3.jpeg'
+import Model3 from '../../Images/Model3.jpeg'
+// import Model3 from '../../Images/Imagotipo.png'
 
-    const vidRef = useRef();
+const Products = () => {
+    return(
+        <div>
+            {/* <div
+                className="item"
+                // style={{
+                //     backgroundImage: `url(${backImg})`,
+                // }}
+            >
+                <div className="item-container">
 
-    // useEffect(() => { vidRef.current.play(); },[]);
+                    <div className="item-text">
+                        <p>{title}</p>
+                    </div>
 
-    return (
-        <>
-
-            <video src={video1} width="100%" height="100%" muted autoPlay loop>
-                {/* <source } type="video/mp4"/>
-            <source src={video} type="video/mp4"/> */}
-                Your browser does not support the video tag.
-            </video>
-
-            <div style={{
-                position: 'absolute',
-                top: '45%',
-                left: '25%',
-                margin: '5rem',
-                transform: 'translate(-50%, -50%)',
-                color: 'white'
-            }}>
-                <div style={{
-                    fontSize: '60px',
-                    fontWeight: '700',
-                    fontFamily: 'sans-serif'
-                }}>Academia Aeronautica Latina</div>
-                <div style={{
-                    fontSize: '16px',
-                    fontFamily: 'Poppins',
-                    fontWeight: '400',
-                    marginTop: '0.5rem',
-                    marginLeft: '0.5rem'
-                }}>Enseñando a volar</div>
-            </div>
-
-            <div>
-                <CajaInf
-                    nombre='Piloto de A'
-                    texto='asmfmdnsf'
+                    <div className="item-desc">
+                        <p>{desc}</p>
+                    </div>
+                    
+                    <div className="item-third">
+                        <button className="firstB">{FirstButton}</button>
+                        {twoButtons && (
+                        <button className="secondB">{SecondButton}</button>
+                        )}
+                    </div>
+                </div>
+            </div> */}
+                <Item 
+                    title = "Model 3"
+                    desc = "Order online for Touchless Delivery"
+                    backImg={Model3}
+                    FirstButton="Custom Order"
+                    SecondButton="Existing Inventory"
+                    twoButtons="true"
                 />
-                <CajaInf
-                    nombre='hola'
-                    texto='asmfmdnsf'
-                />
-            </div>
-
-        </>
+        </div>
     )
-
 }
 
-export default Body
+
+export default Products;

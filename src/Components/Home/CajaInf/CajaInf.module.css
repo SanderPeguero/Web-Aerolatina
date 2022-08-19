@@ -1,20 +1,23 @@
-.contenedor-inf {
-  width: 570px;
-  height: 668px;
+.contenedorInf {
+  width: 30rem;
+  height: 35rem;
   margin: 10px 10px 50px;
-  display: flex;
+  display: flow-root;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
 }
 
-.img-inf {
-  height: 100%;
+.imgInf {
+  height: 10rem;
+  align-self: flex-start;
+  margin-left: 6rem;
+  margin-top: 1rem;
   width: auto;
 }
 
-.contenedor-texto-inf {
+.contenedorTextoInf {
   text-align: center;
   padding: 40px;
   font-family: Lato, sans-serif;
@@ -22,11 +25,11 @@
   line-height: 1.5rem;
 }
 
-.nombre-inf {
+.nombreInf {
   font-size: 1.3rem;
 }
 
-texto-inf {
+.textoInf {
   font-size: 1.1rem;
   text-align: justify;
 }

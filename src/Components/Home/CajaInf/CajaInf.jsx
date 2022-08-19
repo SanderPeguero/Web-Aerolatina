@@ -1,32 +1,29 @@
 import React from 'react';
-import './CajaInf.module.css'
+import styles from './CajaInf.module.css'
 
 const CajaInf = (props) => {
 
     return (
 
-        <div className='contenedor-inf'>
+        <div className={styles.contenedorInf}>
 
-            {
-                /*
-                <img 
-                    className='img-inf' 
-                    src={require(`../../../Images/${props.imagen}`)} 
-                    alt='Foto Inf'
-                />
-                */
-            }
+            <img
+                className={styles.imgInf}
+                // src={require(`../../../Images/${props.imagen}`)}
+                src={props.image}
+                alt={props.alt}
+            />
 
-            <div className='contenedor-texto-inf' >
+            <div className={styles.contenedorTextoInf} >
 
-                <p className='nombre-inf'>
+                <p className={styles.nombreInf}>
                     <strong>
-                        {props.nombre}
+                        {props.name}
                     </strong>
                 </p>
 
-                <p className='texto-inf'>
-                    {props.texto}
+                <p className={styles.textoInf}>
+                    {props.text}
                 </p>
 
             </div>
