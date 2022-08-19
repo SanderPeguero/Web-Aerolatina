@@ -9,6 +9,7 @@ import React from "react"
 import Item from "./Item/Item.jsx"
 // import Model3 from '../../assets/Desktop-Model3.jpeg'
 import Model3 from '../../Images/Model3.jpeg'
+import Carrusel from "../Carrusel/Carrusel.jsx"
 // import Model3 from '../../Images/Imagotipo.png'
 
 const Products = () => {
@@ -46,6 +47,7 @@ const Products = () => {
                     SecondButton="Existing Inventory"
                     twoButtons="true"
                 />
+
         </div>
     )
 }
