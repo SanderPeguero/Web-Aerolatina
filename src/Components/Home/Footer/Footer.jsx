@@ -11,8 +11,8 @@ const Footer = () => {
 
     return (
         <div>
-            <footer className='text-white py-4 bg-dark'>
-                <div className="container">
+            <footer className='text-white bg-dark'>
+                <div className={styles.container}>
                     
                     <hr />
                     <nav className="row">
@@ -107,7 +107,6 @@ const Footer = () => {
                                 
                         </ul>
 
-                        <hr />
                     </nav>
                 </div>
             </footer>

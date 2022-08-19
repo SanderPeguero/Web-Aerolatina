@@ -5,6 +5,7 @@ import './App.css'
 
 //Jhon = 3
 //Sander = 3
+//Jose =
 //Horas Invertidas Programando = 6
 
 
