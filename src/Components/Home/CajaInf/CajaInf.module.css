@@ -1,11 +1,11 @@
 .contenedorInf {
-  width: 30rem;
-  height: 35rem;
+  width: 55em;
+  height: 40rem;
   margin: 10px 10px 50px;
   display: flow-root;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color:rgb(111, 181, 247);
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
 }
 
