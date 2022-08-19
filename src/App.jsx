@@ -3,10 +3,10 @@ import Home from './Components/Home/Home.jsx'
 import './App.css'
 
 
-//Jhon = 3
-//Sander = 3
-//Jose =
-//Horas Invertidas Programando = 6
+//Jhon = 6
+//Sander = 6
+//Jose = 3
+//Horas Invertidas Programando = 15
 
 
 function App() {
