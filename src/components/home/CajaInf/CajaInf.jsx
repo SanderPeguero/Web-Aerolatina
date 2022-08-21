@@ -9,7 +9,6 @@ const CajaInf = (props) => {
 
             <img
                 className={styles.imgInf}
-                // src={require(`../../../Images/${props.imagen}`)}
                 src={props.image}
                 alt={props.alt}
             />
@@ -27,40 +26,9 @@ const CajaInf = (props) => {
                 </p>
 
             </div>
-        </div>
-
-    )
-}
-
-const CajaInfExpecifica = (props) =>{
-
-    return (
-        <div className=''>
             
-            <div className=''>
-                Generalidades
-                <br />
-                {props.text}
-            </div>
-
-            <div className=''>
-                Requisitos
-                <br />
-                {props.requisitos} 
-            </div>
-
-            <div className=''>
-                Precio
-                <br />
-                {props.precio}
-            </div>
-
-            <div className= ''>
-                Horarios
-                <br />
-                {props.horarios}
-            </div>
         </div>
+
     )
 }
 

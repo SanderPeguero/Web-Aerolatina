@@ -9,6 +9,7 @@ import Rents from './components/rents/rents.jsx'
 import Pilots from './components/pilots/pilots.jsx'
 import Login from './auth/login/login'
 
+
 import Footer from './components/footer/footer.jsx'
 import './App.css'
 
