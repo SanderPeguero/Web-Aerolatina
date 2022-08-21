@@ -8,7 +8,7 @@
     margin: 0px;
     margin-top: 1rem;
     z-index: 100;
-    color: #000
+    color: rgb(255, 255, 255)
 }
 
 .ghostItem{
@@ -36,7 +36,8 @@
 .header_center{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    margin-right: 10rem;
 }
 
 .header_center p{
