@@ -8,45 +8,32 @@
 import React from "react"
 import Item from "./Item/Item.jsx"
 // import Model3 from '../../assets/Desktop-Model3.jpeg'
-import Model3 from '../../Images/Model3.jpeg'
+import Model3 from '../../Images/HI1070.png'
 import Carrusel from "../Carrusel/Carrusel.jsx"
+import video1 from '../../Videos/Cockpit.mp4'
 // import Model3 from '../../Images/Imagotipo.png'
 
 const Products = () => {
     return(
         <div>
-            {/* <div
-                className="item"
-                // style={{
-                //     backgroundImage: `url(${backImg})`,
-                // }}
+            <video src={video1} width="100%" height="100%" muted autoPlay loop>
+                Your browser does not support the video tag.
+            </video>
+            
+            <Item 
+                title = "Model 3"
+                desc = "Order online for Touchless Delivery"
+                backImg={Model3}
+                FirstButton="Custom Order"
+                SecondButton="Existing Inventory"
+                twoButtons="true"
+            />
+
+            <div
+                style={{ height: '100rem', background: "gray" }}
             >
-                <div className="item-container">
-
-                    <div className="item-text">
-                        <p>{title}</p>
-                    </div>
-
-                    <div className="item-desc">
-                        <p>{desc}</p>
-                    </div>
-                    
-                    <div className="item-third">
-                        <button className="firstB">{FirstButton}</button>
-                        {twoButtons && (
-                        <button className="secondB">{SecondButton}</button>
-                        )}
-                    </div>
-                </div>
-            </div> */}
-                <Item 
-                    title = "Model 3"
-                    desc = "Order online for Touchless Delivery"
-                    backImg={Model3}
-                    FirstButton="Custom Order"
-                    SecondButton="Existing Inventory"
-                    twoButtons="true"
-                />
+                Sander
+            </div>
 
         </div>
     )
