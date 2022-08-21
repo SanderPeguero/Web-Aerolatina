@@ -3,23 +3,36 @@ import './styleHeader.css'
 import Logo from '../../Images/Logo.svg'
 // import Logo from '../../Images/Imagotipo.png'
 import { Navbar, Container, NavDropdown, Offcanvas, Nav } from "react-bootstrap";
+import { Link, Navigate } from "react-router-dom";
 
 const Header = () => {
     return (
         <div className="header">
             <div className="header_logo">
-                <img src={Logo} alt='Logo da Marca'></img>
+                <a href="/">
+                    <img src={Logo} alt='Logo da Marca'></img>
+                </a>
             </div>
             <div className="header_center">
-                <p className="ghostItem">Carrers</p>
-                <p className="ghostItem">Exams</p>
-                <p className="ghostItem">Rents</p>
-                <p className="ghostItem">Pilots</p>
+                <Link to='/carrers' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Carrers</p>
+                </Link>
+                <Link to='/pilotpass' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Pilot Pass</p>
+                </Link>
+                <Link to='/rents' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Rents</p>
+                </Link>
+                <Link to='/pilots' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Pilots</p>
+                </Link>
             </div>
 
             <div className="header_right">
-                <p className="ghostItem">Account</p>
-                <p className="ghostItem">Menu</p>
+                <Link to='/login' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Account</p>
+                </Link>
+                {/* <p className="ghostItem">Menu</p> */}
             </div>
 
             <div className="revealGhostItems">
@@ -36,16 +49,16 @@ const Header = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Item className="listItem" href="/">
+                                    <Nav.Item className="listItem" href="/carrers">
                                         Carrers
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/">
-                                        Exams
+                                    <Nav.Item className="listItem" href="/pilotpass">
+                                        Pilot Pass
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/" >
+                                    <Nav.Item className="listItem" href="/rents" >
                                         Rents
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/">
+                                    <Nav.Item className="listItem" href="/pilots">
                                         Pilots
                                     </Nav.Item>
                                     <Nav.Item className="listItem" href="/">
