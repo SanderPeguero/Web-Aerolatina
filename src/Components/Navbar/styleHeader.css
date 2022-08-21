@@ -20,16 +20,17 @@
     padding: 5px;
 }
 
-.header_logo{
+/* .header_logo{
     height: 2rem;
     width: 2rem;
     margin-top: 1rem;
     margin-left: 1rem;
-}
+} */
 
 .header_logo img{
     height: 4rem;
     width: 4rem;
+    margin-left: 5vw;
 }
 
 
@@ -40,7 +41,7 @@
     margin-right: 10rem;
 }
 
-.header_center p{
+.header_center a{
     margin: 10px;
 }
 

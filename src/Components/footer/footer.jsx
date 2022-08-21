@@ -4,7 +4,7 @@
 // npm install react-icons
 
 import React from 'react'
-import Logo from '../../../Images/Logo.svg'
+import Logo from '../../images/Logo.svg'
 import styles from './Footer.module.css'
 
 const Footer = () => {
