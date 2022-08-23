@@ -5,7 +5,10 @@ import Logo from '../../images/Logo.svg'
 import { Navbar, Container, NavDropdown, Offcanvas, Nav } from "react-bootstrap";
 import { Link, Navigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({setOpenSigIn}) => {
+
+  const handleOpenSigIn = () => setOpenSigIn(true)
+
     return (
         <div className="header">
             <div className="header_logo">
@@ -29,7 +32,7 @@ const Header = () => {
             </div>
 
             <div className="header_right">
-                <Link to='/login' style={{ textDecoration: 'none', color: 'white' }}>
+                <Link to='/login'  onClick={{handleOpenSigIn}} style={{ textDecoration: 'none', color: 'white' }}>
                     <p className="ghostItem">Account</p>
                 </Link>
                 {/* <p className="ghostItem">Menu</p> */}

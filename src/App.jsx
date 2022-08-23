@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/navbar.jsx'
 
@@ -8,6 +8,8 @@ import Pilotpass from './components/pilotpass/pilotpass.jsx'
 import Rents from './components/rents/rents.jsx'
 import Pilots from './components/pilots/pilots.jsx'
 import Login from './auth/login/login'
+
+import SignUp from './components/SigIn/SigIn.jsx'
 
 
 import Footer from './components/footer/footer.jsx'
@@ -22,6 +24,8 @@ import './App.css'
 
 function App() {
 
+const [openSigIn, setOpenSigIn] = useState(false) 
+
   return (
     <div style={{
       display: 'flex',
@@ -30,7 +34,7 @@ function App() {
     }}>
       <BrowserRouter>
         <header>
-          <Navbar />
+          <Navbar setOpenSigIn={setOpenSigIn}/>
         </header>
         <main>
           <Routes>
@@ -39,7 +43,7 @@ function App() {
             <Route exact path='/pilotpass' element={<Pilotpass/>}></Route>
             <Route exact path='/rents' element={<Rents/>}></Route>
             <Route exact path='/pilots' element={<Pilots/>}></Route>
-            <Route exact path='/login' element={<Login/>}></Route>
+            <Route exact path='/login' element={<SignUp open={openSigIn} setOpen={setOpenSigIn}/>}></Route>
           </Routes>
         </main>
         <Footer/>
