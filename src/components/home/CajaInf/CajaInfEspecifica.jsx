@@ -5,108 +5,19 @@ const CajaInfExpecifica = (props) => {
 
     return (
 
-        <div className='card-group' >
+        <div className={styles.contenedorInfEsp}>
 
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-                <div className='card-title'>
-                    Name
-                </div>
+            <div className={styles.contenedorTextoInf} >
 
-                <div className='card-body'>
-                    {props.name}
-                </div>
+                <p className={styles.nombreInf}>
+                    <strong>
+                        {props.name}
+                    </strong>
+                </p>
 
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-                <div className='card-title'>
-                    Generalities
-                </div>
-
-                <div className='card-body'>
-                    {props.generalidades}
-                </div>
-
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-
-                <div className='card-title'>
-                    Requirements
-                </div>
-
-                <div className='card-body'>
-                    {props.requisitos}
-                </div>
-
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-
-                <div className='card-title'>
-                    Price
-                </div>
-
-                <div className='card-body'>
-                    {props.precio}
-                </div>
-
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-
-                <div className='card-title'>
-                    Schedules
-                </div>
-
-                <div className='card-body'>
-                    {props.horarios}
-                </div>
+                <p className={styles.textoInf}>
+                    {props.text}
+                </p>
 
             </div>
 

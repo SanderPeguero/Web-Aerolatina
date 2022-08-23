@@ -1,6 +1,17 @@
 /*------------------------------CajaInfEspecificos Estilos------------------------------*/
 
-
+.contenedorInfEsp {
+  width: 40em;
+  height: 27rem;
+  margin: 0.5rem;
+  display: flow-root;
+  align-items: center;
+  justify-content: center;
+  background-color:#000;
+  color: #fff;
+  box-shadow: 0 3px 13px 1px rgba(128, 128, 128, 0.09);
+  border-radius: 2rem;
+}
 
 
 
