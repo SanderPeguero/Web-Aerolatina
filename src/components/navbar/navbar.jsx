@@ -4,11 +4,12 @@ import Logo from '../../images/Logo.svg'
 // import Logo from '../../Images/Imagotipo.png'
 import { Navbar, Container, NavDropdown, Offcanvas, Nav } from "react-bootstrap";
 import { Link, Navigate } from "react-router-dom";
+import { Button } from "@mui/material";
+import ButtonUnstyled from '@mui/base/ButtonUnstyled'
+const Header = ({ setOpenSigIn , setOpenLogin}) => {
 
-const Header = ({setOpenSigIn}) => {
-
-  const handleOpenSigIn = () => setOpenSigIn(true)
-
+    const handleOpenSigIn = () => setOpenSigIn(true)
+    const handleOpenLogin = () => setOpenLogin(true)
     return (
         <div className="header">
             <div className="header_logo">
@@ -32,10 +33,32 @@ const Header = ({setOpenSigIn}) => {
             </div>
 
             <div className="header_right">
-                <Link to='/login'  onClick={{handleOpenSigIn}} style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Account</p>
-                </Link>
-                {/* <p className="ghostItem">Menu</p> */}
+                <ButtonUnstyled onClick={handleOpenSigIn} style={{
+                    textDecoration: 'none',
+                    color: 'white',
+                    fontFamily: 'arial',
+                    background: 'none',
+                    border: '0'
+
+
+                }}>
+                    <p className="ghostItem">Sign In</p>
+                    {/* Account */}
+                </ButtonUnstyled>
+
+                <ButtonUnstyled
+                    onClick={handleOpenLogin} style={{
+                        textDecoration: 'none',
+                        color: 'white',
+                        fontFamily: 'arial',
+                        background: 'none',
+                        border: '0'
+                    }}>
+
+                    <p className="ghostItem">Log In</p>
+
+                </ButtonUnstyled> 
+                {/* <p className="ghostItem">Menu</p>*/}
             </div>
 
             <div className="revealGhostItems">
@@ -64,7 +87,7 @@ const Header = ({setOpenSigIn}) => {
                                     <Nav.Item className="listItem" href="/pilots">
                                         Pilots
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/">
+                                    <Nav.Item className="listItem" >
                                         Account
                                     </Nav.Item>
                                 </Nav>

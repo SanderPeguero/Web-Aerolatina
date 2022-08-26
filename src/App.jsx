@@ -10,7 +10,10 @@ import Pilots from './components/pilots/pilots.jsx'
 import Login from './auth/login/login'
 
 import SignUp from './components/SigIn/SigIn.jsx'
+import SignUpModal from './components/SigIn/SigInModal.jsx'
 
+// import LogIn from './components/LogIn/LogIn.jsx'
+import LogInModal from './components/LogIn/LogInModal.jsx'
 
 import Footer from './components/footer/footer.jsx'
 import './App.css'
@@ -26,15 +29,22 @@ function App() {
 
 const [openSigIn, setOpenSigIn] = useState(false) 
 
+const [openLogin, setOpenLogin] = useState(false)
+
+
   return (
     <div style={{
       display: 'flex',
       flexDirection: 'column',
       minHeight: '100vh'
     }}>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
+      {/* ok, por eso era el error, ok */}
         <header>
-          <Navbar setOpenSigIn={setOpenSigIn}/>
+          <Navbar setOpenSigIn={setOpenSigIn} setOpenLogin={setOpenLogin}/>
+          <SignUpModal open={openSigIn} setOpen={setOpenSigIn}/>
+          <LogInModal open={openLogin} setOpen={setOpenLogin}/>
+
         </header>
         <main>
           <Routes>
@@ -43,11 +53,11 @@ const [openSigIn, setOpenSigIn] = useState(false)
             <Route exact path='/pilotpass' element={<Pilotpass/>}></Route>
             <Route exact path='/rents' element={<Rents/>}></Route>
             <Route exact path='/pilots' element={<Pilots/>}></Route>
-            <Route exact path='/login' element={<SignUp open={openSigIn} setOpen={setOpenSigIn}/>}></Route>
+            {/* <Route exact path='/login' element={<SignUp open={openSigIn} setOpen={setOpenSigIn}/>}></Route> */}
           </Routes>
         </main>
         <Footer/>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
     </div>
   )
 }

@@ -1,17 +1,15 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-// import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { isFromValid, isValueValid } from '../../form/formFramework'
 import { auth } from '../../Store/actions/authActions'
 import { Box, Container, Grid, Input, TextField } from '@mui/material';
 import { Component } from "react"
 import { connect } from 'react-redux';
-import { createTheme } from '@mui/material';
-import { ThemeProvider } from '@mui/material';
 
 const theme = createTheme();
 
-class SignUp extends Component {
+class LogIn extends Component {
 
     state = {
       isFormValid: false,
@@ -21,9 +19,9 @@ class SignUp extends Component {
                 value: "",
                 type: "email",
                 label: "Email",
-                errormessage: "Invalid Email",
-                valid: "false",
-                touched: "false",
+                errorMessage: "Invalid Email",
+                valid: false,
+                touched: false,
                 validation: {
                     required: true,
                     email: true
@@ -34,7 +32,7 @@ class SignUp extends Component {
                 value: "",
                 type: "password",
                 label: "Password",
-                errormessage: "Wrong Password",
+                errorMessage: "Wrong Password",
                 valid: false,
                 touched: false,
                 validation: {
@@ -58,9 +56,8 @@ class SignUp extends Component {
       this.props.auth(
           this.state.formControls.email.value,
           this.state.formControls.password.value,
-          false,
-          console.log(this.state.formControls.email),
-          console.log(this.state.formControls.password)
+          false
+
           
       )
       
@@ -108,10 +105,10 @@ class SignUp extends Component {
                 type={formControl.type}
                 value={formControl.value}
                 label={formControl.label}
-                errormessage={formControl.errormessage}
+                errorMessage={formControl.errorMessage}
                 valid={formControl.valid}
                 touched={formControl.touched}
-                shouldvalidate={Boolean(formControl.validation)}
+                shouldValidate={Boolean(formControl.validation)}
                 onChange={event => this.onChangeHandler(event, formControlName)}
                 />
               </Grid>
@@ -129,7 +126,7 @@ class SignUp extends Component {
     return(
         <div >
           <div>
-            <h1>Sign In</h1>
+            <h1>Log In</h1>
               <form action="" onSubmit={this.submitHandler} >
                     
                 {this.renderInputs()}
@@ -140,10 +137,10 @@ class SignUp extends Component {
                   fullWidth
                   variant="contained"
                   sx={{ mt: 3, mb: 2 }}
-                  onClick={this.signUpHandler}
+                  onClick={this.loginHandler}
                   disabled={!this.state.isFormValid}
              >
-               Sign Up
+              Log In
              </Button>
                 </form>
             </div>
@@ -158,5 +155,4 @@ function mapDispatchToProps(dispatch){
     auth: (email, password, isLogIn) => dispatch(auth(email,password,isLogIn))
   }
 }
-
-export default connect(null, mapDispatchToProps)(SignUp)
+export default connect(null, mapDispatchToProps)(LogIn)
