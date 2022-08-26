@@ -5,7 +5,7 @@ import imagen from '../../../images/OIP.jpeg'
 
 function Carrusel() {
     return (        
-            <Carousel style={{ background: '#00a4f7' }}>
+            <Carousel style={{ background: '#00a4f7', borderRadius: '2rem', padding: '2rem', height: '40rem'}}>
 
                 <Carousel.Item>
                     <div class="d-flex h-100 align-items-center justify-content-center">

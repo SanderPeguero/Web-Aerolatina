@@ -1,6 +1,25 @@
 /*------------------------------CajaInfEspecificos Estilos------------------------------*/
 
+.contenedorInfEsp {
+  width: 40em;
+  height: 33rem;
+  margin: 0.3rem;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  background-color:#000;
+  color: #fff;
+  box-shadow: 0 3px 13px 1px rgba(58, 97, 94, 0.09);
+  border-radius: 2rem;
+}
 
+.textoInfEsp {
+  font-size: 1.1rem;
+  display: flex;
+  text-align: justify;
+  height: auto;
+  width: auto;
+}
 
 
 
@@ -10,8 +29,8 @@
 
 /*------------------------------CajaInf Estilos------------------------------*/
 .contenedorInf {
-  width: 55em;
-  height: 40rem;
+  width: 60em;
+  height: 35rem;
   margin: 10px 10px 50px;
   display: flow-root;
   align-items: center;
