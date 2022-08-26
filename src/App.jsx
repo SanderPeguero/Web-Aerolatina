@@ -10,7 +10,8 @@ import Pilots from './components/pilots/pilots.jsx'
 import Login from './auth/login/login'
 
 
-import Footer from './components/footer/footer.jsx'
+import Footer from './components/footer/footer2.jsx'
+// import Footer2 from './components/footer/footer.jsx'
 import './App.css'
 
 
@@ -35,14 +36,15 @@ function App() {
         <main>
           <Routes>
             <Route exact path='/' element={<Home />}></Route>
-            <Route exact path='/carrers' element={<Carrers/>}></Route>
+            <Route exact path='/carreras' element={<Carrers/>}></Route>
             <Route exact path='/pilotpass' element={<Pilotpass/>}></Route>
-            <Route exact path='/rents' element={<Rents/>}></Route>
-            <Route exact path='/pilots' element={<Pilots/>}></Route>
+            <Route exact path='/rentas' element={<Rents/>}></Route>
+            <Route exact path='/pilotos' element={<Pilots/>}></Route>
             <Route exact path='/login' element={<Login/>}></Route>
           </Routes>
         </main>
         <Footer/>
+        {/* <Footer2/> */}
       </BrowserRouter>
     </div>
   )

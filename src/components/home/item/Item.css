@@ -14,7 +14,7 @@
 
 .item:hover .item-text{
     transition: 1s;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .item .item-desc{
@@ -23,7 +23,7 @@
 
 .item:hover .item-desc{
     transition: 1s;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .item-text{
