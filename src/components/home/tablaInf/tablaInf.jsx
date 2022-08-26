@@ -4,132 +4,51 @@ const TablaInf = (props) => {
 
     return (
 
-        <div className='card-group'>
-
-            <div className='card'
+        <>
+            <div className=''
                 style={{
                     backgroundColor: '#000000',
                     color: '#fff',
-                    display: 'flex',
+                    display: 'block',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    padding: '2rem'
+                    padding: '2rem',
                 }}
             >
-                <div className='card-title' 
+                <h3
                     style={{
-                        fontWeight: 'bold'
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        textAlign: 'center'
                     }}
                 >
-                    Name
+                    Información General
+                </h3>
+
+                <div style={{ padding: '1rem', justifyContent: 'center' }}>
+                    {props.p1}
                 </div>
 
-                <div className='card-body'>
-                    {props.name}
+                <div style={{ padding: '1rem', justifyContent: 'center' }}>
+                    {props.p2}
+                </div>
+
+                <div style={{ padding: '1rem', justifyContent: 'center' }}>
+                    {props.p3}
+                </div>
+
+                <div style={{ padding: '1rem', justifyContent: 'center' }}>
+                    {props.p4}
+                </div>
+
+                <div style={{ padding: '1rem', justifyContent: 'center' }}>
+                    {props.p5}
                 </div>
 
             </div>
 
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-                <div className='card-title' 
-                    style={{
-                        fontWeight: 'bold'
-                    }}
-                >
-                    Generalities
-                </div>
-
-                <div className='card-body'>
-                    {props.generalities}
-                </div>
-
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-
-                <div className='card-title' 
-                    style={{
-                        fontWeight: 'bold'
-                    }}
-                >
-                    Requirements
-                </div>
-
-                <div className='card-body'>
-                    {props.requirements}
-                </div>
-
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-
-                <div className='card-title'
-                    style={{
-                        fontWeight: 'bold'
-                    }}
-                >
-                    Price
-                </div>
-
-                <div className='card-body'>
-                    {props.price}
-                </div>  
-
-            </div>
-
-            <div className='card'
-                style={{
-                    backgroundColor: '#000000',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '2rem'
-                }}
-            >
-
-                <div className='card-title'
-                    style={{
-                        fontWeight: 'bold'
-                    }}
-                >
-                    Schedules
-                </div>
-
-                <div className='card-body'>
-                    {props.schedules}
-                </div>
-
-            </div>
-
-        </div>
+        </>
     )
 }
 

@@ -15,7 +15,7 @@ const CajaInfExpecifica = (props) => {
                     </strong>
                 </p>
 
-                <p className={styles.textoInf}>
+                <p className={styles.textoInfEsp}>
                     {props.text}
                 </p>
 
