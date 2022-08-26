@@ -14,17 +14,20 @@ const Header = () => {
                 </a>
             </div>
             <div className="header_center">
-                <Link to='/carrers' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Carrers</p>
+                <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Inicio</p>
+                </Link>
+                <Link to='/carreras' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Carreras</p>
                 </Link>
                 <Link to='/pilotpass' style={{ textDecoration: 'none', color: 'white' }}>
                     <p className="ghostItem">Pilot Pass</p>
                 </Link>
-                <Link to='/rents' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Rents</p>
+                <Link to='/rentas' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Rentas</p>
                 </Link>
-                <Link to='/pilots' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Pilots</p>
+                <Link to='/pilotos' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Pilotos</p>
                 </Link>
             </div>
 
@@ -49,19 +52,19 @@ const Header = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Item className="listItem" href="/carrers">
+                                    <Nav.Item className="listItem" href="/carreras">
                                         Carrers
                                     </Nav.Item>
                                     <Nav.Item className="listItem" href="/pilotpass">
                                         Pilot Pass
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/rents" >
+                                    <Nav.Item className="listItem" href="/rentas" >
                                         Rents
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/pilots">
+                                    <Nav.Item className="listItem" href="/pilot0s">
                                         Pilots
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/">
+                                    <Nav.Item className="listItem" href="/login">
                                         Account
                                     </Nav.Item>
                                 </Nav>
