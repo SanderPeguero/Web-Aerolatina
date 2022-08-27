@@ -6,6 +6,15 @@ import { Navbar, Container, NavDropdown, Offcanvas, Nav } from "react-bootstrap"
 import { Link, Navigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import ButtonUnstyled from '@mui/base/ButtonUnstyled'
+const styleNavIntem = {
+   
+        textDecoration: 'none',
+        color: 'black',
+        fontFamily: 'arial',
+        background: 'none',
+        border: '0'
+    
+}
 const Header = ({ setOpenSigIn , setOpenLogin}) => {
 
     const handleOpenSigIn = () => setOpenSigIn(true)
@@ -75,20 +84,31 @@ const Header = ({ setOpenSigIn , setOpenLogin}) => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Item className="listItem" href="/carrers">
+                                    <Nav.Item className="listItem" href="/carrers" style={styleNavIntem}>
                                         Carrers
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/pilotpass">
+                                    <Nav.Item className="listItem" href="/pilotpass" style={styleNavIntem}>
                                         Pilot Pass
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/rents" >
+                                    <Nav.Item className="listItem" href="/rents" style={styleNavIntem}>
                                         Rents
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/pilots">
+                                    <Nav.Item className="listItem" href="/pilots" style={styleNavIntem}>
                                         Pilots
                                     </Nav.Item>
                                     <Nav.Item className="listItem" >
-                                        Account
+                                        <ButtonUnstyled  onClick={handleOpenSigIn}
+                                        style={styleNavIntem}
+                                        >
+                                            Sign In
+                                        </ButtonUnstyled>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                    <ButtonUnstyled className="listItem"  onClick={handleOpenLogin}
+                                       style={styleNavIntem}
+                                       >
+                                            Log In
+                                        </ButtonUnstyled>
                                     </Nav.Item>
                                 </Nav>
                             </Offcanvas.Body>
