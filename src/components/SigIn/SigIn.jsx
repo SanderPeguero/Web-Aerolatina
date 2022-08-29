@@ -22,8 +22,8 @@ class SignUp extends Component {
                 type: "email",
                 label: "Email",
                 errormessage: "Invalid Email",
-                valid: "false",
-                touched: "false",
+                valid: false,
+                touched: false,
                 validation: {
                     required: true,
                     email: true
@@ -105,14 +105,14 @@ class SignUp extends Component {
              <Grid container >
               <Grid item xs={0} sm={0}>
                 <TextField
-                type={formControl.type}
-                value={formControl.value}
-                label={formControl.label}
-                errormessage={formControl.errormessage}
-                valid={formControl.valid}
-                touched={formControl.touched}
-                shouldvalidate={Boolean(formControl.validation)}
-                onChange={event => this.onChangeHandler(event, formControlName)}
+                  type={formControl.type}
+                  value={formControl.value.toString()}
+                  label={formControl.label}
+                  errormessage={formControl.errormessage}
+                  valid={formControl.valid.toString()}
+                  touched={formControl.touched.toString()}
+                  shouldvalidate={Boolean(formControl.validation).toString()}
+                  onChange={event => this.onChangeHandler(event, formControlName)}
                 />
               </Grid>
              </Grid>

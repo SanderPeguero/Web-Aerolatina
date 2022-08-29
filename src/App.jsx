@@ -21,7 +21,7 @@ import './App.css'
 
 
 //Jhon = 8.42
-//Sander = 9.42
+//Sander = 13.42
 //Jose = 5.45
 //Horas Invertidas Programando = 16
 

@@ -103,12 +103,12 @@ class LogIn extends Component {
               <Grid item xs={0} sm={0}>
                 <TextField
                 type={formControl.type}
-                value={formControl.value}
+                value={formControl.value.toString()}
                 label={formControl.label}
-                errorMessage={formControl.errorMessage}
-                valid={formControl.valid}
-                touched={formControl.touched}
-                shouldValidate={Boolean(formControl.validation)}
+                errormessage={formControl.errorMessage}
+                valid={formControl.valid.toString()}
+                touched={formControl.touched.toString()}
+                shouldvalidate={Boolean(formControl.validation).toString()}
                 onChange={event => this.onChangeHandler(event, formControlName)}
                 />
               </Grid>
