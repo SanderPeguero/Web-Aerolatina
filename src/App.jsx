@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/navbar.jsx'
 
@@ -9,6 +9,11 @@ import Rents from './components/rents/rents.jsx'
 import Pilots from './components/pilots/pilots.jsx'
 import Login from './auth/login/login'
 
+import SignUp from './components/SigIn/SigIn.jsx'
+import SignUpModal from './components/SigIn/SigInModal.jsx'
+
+// import LogIn from './components/LogIn/LogIn.jsx'
+import LogInModal from './components/LogIn/LogInModal.jsx'
 
 import Footer from './components/footer/footer2.jsx'
 // import Footer2 from './components/footer/footer.jsx'
@@ -23,15 +28,24 @@ import './App.css'
 
 function App() {
 
+const [openSigIn, setOpenSigIn] = useState(false) 
+
+const [openLogin, setOpenLogin] = useState(false)
+
+
   return (
     <div style={{
       display: 'flex',
       flexDirection: 'column',
       minHeight: '100vh'
     }}>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
+      {/* ok, por eso era el error, ok */}
         <header>
-          <Navbar />
+          <Navbar setOpenSigIn={setOpenSigIn} setOpenLogin={setOpenLogin}/>
+          <SignUpModal open={openSigIn} setOpen={setOpenSigIn}/>
+          <LogInModal open={openLogin} setOpen={setOpenLogin}/>
+
         </header>
         <main>
           <Routes>
@@ -45,7 +59,6 @@ function App() {
         </main>
         <Footer/>
         {/* <Footer2/> */}
-      </BrowserRouter>
     </div>
   )
 }

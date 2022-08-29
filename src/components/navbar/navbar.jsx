@@ -4,8 +4,21 @@ import Logo from '../../images/Logo.svg'
 // import Logo from '../../Images/Imagotipo.png'
 import { Navbar, Container, NavDropdown, Offcanvas, Nav } from "react-bootstrap";
 import { Link, Navigate } from "react-router-dom";
+import { Button } from "@mui/material";
+import ButtonUnstyled from '@mui/base/ButtonUnstyled'
+const styleNavIntem = {
+   
+        textDecoration: 'none',
+        color: 'black',
+        fontFamily: 'arial',
+        background: 'none',
+        border: '0'
+    
+}
+const Header = ({ setOpenSigIn , setOpenLogin}) => {
 
-const Header = () => {
+    const handleOpenSigIn = () => setOpenSigIn(true)
+    const handleOpenLogin = () => setOpenLogin(true)
     return (
         <div className="header">
             <div className="header_logo">
@@ -32,10 +45,32 @@ const Header = () => {
             </div>
 
             <div className="header_right">
-                <Link to='/login' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Account</p>
-                </Link>
-                {/* <p className="ghostItem">Menu</p> */}
+                <ButtonUnstyled onClick={handleOpenSigIn} style={{
+                    textDecoration: 'none',
+                    color: 'white',
+                    fontFamily: 'arial',
+                    background: 'none',
+                    border: '0'
+
+
+                }}>
+                    <p className="ghostItem">Sign In</p>
+                    {/* Account */}
+                </ButtonUnstyled>
+
+                <ButtonUnstyled
+                    onClick={handleOpenLogin} style={{
+                        textDecoration: 'none',
+                        color: 'white',
+                        fontFamily: 'arial',
+                        background: 'none',
+                        border: '0'
+                    }}>
+
+                    <p className="ghostItem">Log In</p>
+
+                </ButtonUnstyled> 
+                {/* <p className="ghostItem">Menu</p>*/}
             </div>
 
             <div className="revealGhostItems">
@@ -52,20 +87,31 @@ const Header = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Item className="listItem" href="/carreras">
+                                    <Nav.Item className="listItem" href="/carrers" style={styleNavIntem}>
                                         Carrers
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/pilotpass">
+                                    <Nav.Item className="listItem" href="/pilotpass" style={styleNavIntem}>
                                         Pilot Pass
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/rentas" >
+                                    <Nav.Item className="listItem" href="/rents" style={styleNavIntem}>
                                         Rents
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/pilot0s">
+                                    <Nav.Item className="listItem" href="/pilots" style={styleNavIntem}>
                                         Pilots
                                     </Nav.Item>
-                                    <Nav.Item className="listItem" href="/login">
-                                        Account
+                                    <Nav.Item className="listItem" >
+                                        <ButtonUnstyled  onClick={handleOpenSigIn}
+                                        style={styleNavIntem}
+                                        >
+                                            Sign In
+                                        </ButtonUnstyled>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                    <ButtonUnstyled className="listItem"  onClick={handleOpenLogin}
+                                       style={styleNavIntem}
+                                       >
+                                            Log In
+                                        </ButtonUnstyled>
                                     </Nav.Item>
                                 </Nav>
                             </Offcanvas.Body>
