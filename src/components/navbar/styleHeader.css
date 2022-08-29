@@ -20,12 +20,12 @@
     padding: 5px;
 }
 
-/* .header_logo{
-    height: 2rem;
-    width: 2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-} */
+.header_logo{
+    /* height: 2rem;
+    width: 2rem; */
+    /* margin-top: 1rem;
+    margin-left: 1rem; */
+}
 
 .header_logo img{
     height: 4rem;
@@ -63,7 +63,7 @@
 
 .ghostItem:hover{
     transition: 0.5s;
-    background-color:#00a4f7;
+    background-color: rgba(0, 164, 247, 0.9);
 }
 
 .revealItems:hover {

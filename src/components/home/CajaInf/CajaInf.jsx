@@ -25,6 +25,9 @@ const CajaInf = (props) => {
                     {props.text}
                 </p>
 
+                <p className={styles.textoInf}>
+                    {props.text1}
+                </p>
             </div>
             
         </div>

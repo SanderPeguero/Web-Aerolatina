@@ -5,10 +5,10 @@ import imagen from '../../../images/OIP.jpeg'
 
 function Carrusel() {
     return (        
-            <Carousel style={{ background: '#00a4f7' }}>
+            <Carousel style={{ background: '#00a4f7', borderRadius: '2rem', padding: '2rem', height: '40rem'}}>
 
                 <Carousel.Item>
-                    <div class="d-flex h-100 align-items-center justify-content-center">
+                    <div className="d-flex h-100 align-items-center justify-content-center">
                         <CajaInf
                             imagen={imagen}
                             alt='Private Pilot Image'
@@ -20,7 +20,7 @@ function Carrusel() {
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div class="d-flex h-100 align-items-center justify-content-center">
+                    <div className="d-flex h-100 align-items-center justify-content-center">
                         <CajaInf
                             imagen={imagen}
                             alt='Commercial Pilot Image'
@@ -31,7 +31,7 @@ function Carrusel() {
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div class="d-flex h-100 align-items-center justify-content-center">
+                    <div className="d-flex h-100 align-items-center justify-content-center">
                         <CajaInf
                             imagen={imagen}
                             alt='Image of instrument classifier'
@@ -42,7 +42,7 @@ function Carrusel() {
                 </Carousel.Item>
                 
                 <Carousel.Item>
-                    <div class="d-flex h-100 align-items-center justify-content-center">
+                    <div className="d-flex h-100 align-items-center justify-content-center">
                         <CajaInf
                             imagen={imagen}
                             alt='Instructor image'
@@ -52,7 +52,7 @@ function Carrusel() {
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div class="d-flex h-100 align-items-center justify-content-center">
+                    <div className="d-flex h-100 align-items-center justify-content-center">
                         <CajaInf
                             imagen={imagen}
                             alt='Image of the mechanic'

@@ -15,12 +15,13 @@ import SignUpModal from './components/SigIn/SigInModal.jsx'
 // import LogIn from './components/LogIn/LogIn.jsx'
 import LogInModal from './components/LogIn/LogInModal.jsx'
 
-import Footer from './components/footer/footer.jsx'
+import Footer from './components/footer/footer2.jsx'
+// import Footer2 from './components/footer/footer.jsx'
 import './App.css'
 
 
 //Jhon = 8.42
-//Sander = 9.42
+//Sander = 13.42
 //Jose = 5.45
 //Horas Invertidas Programando = 16
 
@@ -49,15 +50,15 @@ const [openLogin, setOpenLogin] = useState(false)
         <main>
           <Routes>
             <Route exact path='/' element={<Home />}></Route>
-            <Route exact path='/carrers' element={<Carrers/>}></Route>
+            <Route exact path='/carreras' element={<Carrers/>}></Route>
             <Route exact path='/pilotpass' element={<Pilotpass/>}></Route>
-            <Route exact path='/rents' element={<Rents/>}></Route>
-            <Route exact path='/pilots' element={<Pilots/>}></Route>
-            {/* <Route exact path='/login' element={<SignUp open={openSigIn} setOpen={setOpenSigIn}/>}></Route> */}
+            <Route exact path='/rentas' element={<Rents/>}></Route>
+            <Route exact path='/pilotos' element={<Pilots/>}></Route>
+            <Route exact path='/login' element={<Login/>}></Route>
           </Routes>
         </main>
         <Footer/>
-      {/* </BrowserRouter> */}
+        {/* <Footer2/> */}
     </div>
   )
 }

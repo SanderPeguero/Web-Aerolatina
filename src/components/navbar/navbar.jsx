@@ -27,17 +27,20 @@ const Header = ({ setOpenSigIn , setOpenLogin}) => {
                 </a>
             </div>
             <div className="header_center">
-                <Link to='/carrers' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Carrers</p>
+                <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Inicio</p>
+                </Link>
+                <Link to='/carreras' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Carreras</p>
                 </Link>
                 <Link to='/pilotpass' style={{ textDecoration: 'none', color: 'white' }}>
                     <p className="ghostItem">Pilot Pass</p>
                 </Link>
-                <Link to='/rents' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Rents</p>
+                <Link to='/rentas' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Rentas</p>
                 </Link>
-                <Link to='/pilots' style={{ textDecoration: 'none', color: 'white' }}>
-                    <p className="ghostItem">Pilots</p>
+                <Link to='/pilotos' style={{ textDecoration: 'none', color: 'white' }}>
+                    <p className="ghostItem">Pilotos</p>
                 </Link>
             </div>
 
