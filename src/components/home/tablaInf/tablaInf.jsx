@@ -13,6 +13,7 @@ const TablaInf = (props) => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     padding: '2rem',
+                    width: 'auto'
                 }}
             >
                 <h3
