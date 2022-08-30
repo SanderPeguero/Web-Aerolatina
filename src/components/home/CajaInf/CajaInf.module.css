@@ -1,8 +1,8 @@
 /*------------------------------CajaInfEspecificos Estilos------------------------------*/
 
 .contenedorInfEsp {
-  width: 40em;
-  height: 33rem;
+  max-width: auto;
+  height: auto;
   margin: 0.3rem;
   display: flexbox;
   align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .textoInfEsp {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   display: flex;
   text-align: justify;
   height: auto;
