@@ -89,16 +89,16 @@ export default function App() {
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
-                <i class="bi bi-envelope-fill">
+                <i className="bi bi-envelope-fill">
                 </i>
                 {" aerolatina@hotmail.com"}
               </p>
               <p>
-                <i class="bi bi-telephone-fill"></i>
+                <i className="bi bi-telephone-fill"></i>
                 {" +1 (809) 233-8200"}
               </p>
               <p>
-                <i class="bi bi-geo-alt-fill">
+                <i className="bi bi-geo-alt-fill">
                     Edf. Aviacion General, AIC , 51000, República Dominicana
                 </i>
               </p>
