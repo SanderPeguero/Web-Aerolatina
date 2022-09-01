@@ -1,4 +1,4 @@
-import axios from "../../axios/axios-quiz";
+import axiosAeroLantina from "../../axios/axiosAeroLantina";
 import {
     FETCH_START,
     FETCH_FAILED,

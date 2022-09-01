@@ -19,7 +19,7 @@ import Footer from './components/footer/footer2.jsx'
 // import Footer2 from './components/footer/footer.jsx'
 import './App.css'
 
-
+import QuizList from './components/pilotpass/QuiList/QuizList.jsx'
 //Jhon = 8.42
 //Sander = 13.42
 //Jose = 5.45
@@ -55,6 +55,7 @@ const [openLogin, setOpenLogin] = useState(false)
             <Route exact path='/rentas' element={<Rents/>}></Route>
             <Route exact path='/pilotos' element={<Pilots/>}></Route>
             <Route exact path='/login' element={<Login/>}></Route>
+            <Route exact path='/quilist'  element={<QuizList/>}></Route>
           </Routes>
         </main>
         <Footer/>
